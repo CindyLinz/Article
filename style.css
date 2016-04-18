@@ -1,0 +1,77 @@
+body {
+  padding: 2em;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  border-bottom: 1px solid #eee;
+  font-size: 2.25em;
+  padding-bottom: 0.3em;
+  line-height: 1.2;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+h2 {
+  border-bottom: 1px solid #eee;
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  color: #777;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.author {
+  float: right;
+  font-style: italic;
+  position: relative;
+  top: -1em;
+}
+.author img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.author div {
+  float: right;
+  text-align: right;
+  margin-left: 0.5em;
+}
+
+.content {
+  clear: both;
+}
+
+.frame {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  border-radius: 11px;
+  padding: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+pre {
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  padding: 16px;
+  overflow: auto;
+}
+
+p {
+  text-align: justify;
+}
