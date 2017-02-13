@@ -16,6 +16,7 @@ sys('git checkout master');
 
 my $frame_html = <<'.';
 <!doctype html><html><head>
+<title><!-- TITLE --></title>
 <meta http-equiv=content-type content=text/html;charset=UTF-8>
 <meta property=og:type content=article>
 <meta property=og:title content='<!-- TITLE -->'>
@@ -48,7 +49,7 @@ my $index_md < io('index.md');
 
 $out{index} = $frame_html
     =~ s/<!-- Cindy is beautiful -->/markdown($index_md)/re
-    =~ s/<!-- TITLE -->/CindyLinz 的文章/r
+    =~ s/<!-- TITLE -->/CindyLinz 的文章/gr
     =~ s/<!-- DESCRIPTION -->/CindyLinz 的文章/r
     =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/#r;
 
@@ -61,7 +62,7 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
     $description =~ s/\[([^][]*)\]\([^()]*\)/$1/g;
     $out{$name} = $frame_html
         =~ s/<!-- Cindy is beautiful -->/markdown($article_md)/re
-        =~ s/<!-- TITLE -->/$title/r
+        =~ s/<!-- TITLE -->/$title/gr
         =~ s/<!-- DESCRIPTION -->/$description/r
         =~ s#<!-- Beautiful Cindy -->#"<img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>$date_cap</div>"#re
         =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/$name.html#r;
