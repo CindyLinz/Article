@@ -73,4 +73,7 @@ sys('git checkout gh-pages');
 while( my($name, $html) = each %out ) {
     print "generate $name.html\n";
     io("$name.html") < $html;
+    sys("git add $name.html");
 }
+
+sys("git commit -m 'update htmls'");
