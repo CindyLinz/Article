@@ -71,5 +71,6 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
 sys('git checkout gh-pages');
 
 while( my($name, $html) = each %out ) {
+    print "generate $name.html\n";
     io("$name.html") < $html;
 }
