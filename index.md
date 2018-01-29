@@ -1,7 +1,7 @@
 ## CindyLinz 的文章..
 
   + [2018.1.27 - 鑫蒂大帝系列 - 低於基本工資的合法工作](2018.1.27-legal-low-paid-job.html)
-  + [2018.1.19 - 邏輯閘黑白圖卡](2018.1.19-logic-gate-mono-card.html)
+  + [2018.1.19 - 邏輯閘與群論素材黑白圖卡](2018.1.19-logic-gate-mono-card.html)
   + [2018.1.12 - 鑫蒂大帝系列 - 合法的超時工作](2018.1.12-legal-overclocked-work.html)
   + [2017.12.5 - 壞老闆逍遙法「內」之道](2017.12.5-legal-bad-boss.html)
   + [2017.10.11 - 蝦皮啟示的出逃人民幣的方法](2017.10.11-a-way-for-rmb-escaping-inspired-by-shopee.html)
