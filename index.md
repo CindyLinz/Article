@@ -1,5 +1,6 @@
 ## CindyLinz 的文章..
 
+  + [2018.7.5 - 不用防水材料的防漏水天花板裝潢設計](2018.7.5-roof-design-for-leaking-water.html)
   + [2018.1.27 - 鑫蒂大帝系列 - 低於基本工資的合法工作](2018.1.27-legal-low-paid-job.html)
   + [2018.1.19 - 邏輯閘與群論素材黑白圖卡](2018.1.19-logic-gate-mono-card.html)
   + [2018.1.12 - 鑫蒂大帝系列 - 合法的超時工作](2018.1.12-legal-overclocked-work.html)
