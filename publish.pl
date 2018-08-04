@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;
@@ -18,6 +18,7 @@ my $frame_html = <<'.';
 <!doctype html><html><head>
 <title><!-- TITLE --></title>
 <meta http-equiv=content-type content=text/html;charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1>
 <meta property=og:type content=article>
 <meta property=og:title content='<!-- TITLE -->'>
 <meta property=og:description content='<!-- DESCRIPTION -->'>
