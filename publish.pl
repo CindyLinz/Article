@@ -22,8 +22,8 @@ my $frame_html = <<'.';
 <meta property=og:type content=article>
 <meta property=og:title content='<!-- TITLE -->'>
 <meta property=og:description content='<!-- DESCRIPTION -->'>
-<meta property=og:image content=http://cindylinz.github.io/Article/me.jpg>
-<meta property=og:image:secure_url content=https://cindylinz.github.io/Article/me.jpg>
+<meta property=og:image content=https://avatars0.githubusercontent.com/u/285660?s=315>
+<meta property=og:image:secure_url content=https://avatars0.githubusercontent.com/u/285660?s=315>
 <link rel=stylesheet type=text/css href=style.css></head><body>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
