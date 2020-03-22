@@ -1,5 +1,6 @@
 ## CindyLinz 的文章..
 
+  + [2020.3.23 - 傷害人民溝通法](2020.3.23-talk-to-people-by-hurt.html)
   + [2020.2.20 - 隱藏手機 (android) Youtube premium 背景播放時的小畫面](2020.2.20-hide-youtube-premium-small-window.html)
   + [2018.11.21 - 投票的宗教意義的心理機制](2018.11.23-the-psychology-effect-of-the-religional-meaning-of-voting.html)
   + [2018.11.21 - 投票的宗教意義](2018.11.21-the-religional-meaning-of-voting.html)
