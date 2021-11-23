@@ -1,0 +1,96 @@
+body {
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  border-bottom: 0.0625em solid #eee;
+  font-size: 2.25em;
+  padding-bottom: 0.3em;
+  line-height: 1.2;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  border-bottom: 0.0625px solid #eee;
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  color: #777;
+  padding: 0 1em;
+  margin: 0;
+}
+
+.author {
+  float: right;
+  font-style: italic;
+  position: relative;
+  top: -1em;
+}
+.author img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.author div {
+  float: right;
+  text-align: right;
+  margin-left: 0.5em;
+}
+
+.content {
+  clear: both;
+}
+
+.frame {
+  max-width: 980px;
+  border: 0.0625em solid #ddd;
+  border-radius: 0.6875em;
+  padding: 2.8125em 0.5em 2.8125em 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0em;
+  list-style: none;
+}
+
+pre {
+  background-color: #f7f7f7;
+  border-radius: 0.1875em;
+  font-size: 85%;
+  line-height: 1.45;
+  padding: 1em;
+  overflow: auto;
+}
+
+p {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 2em;
+  }
+
+  .frame {
+    padding: 2.8125em;
+  }
+
+  ul {
+    padding: 2em;
+    list-style: georgian;
+  }
+}

@@ -6,14 +6,6 @@ use warnings;
 use Text::Markdown qw(markdown);
 use IO::All;
 
-sub sys {
-    my($cmd) = @_;
-    print $cmd, $/;
-    system($cmd);
-}
-
-sys('git checkout master');
-
 my $frame_html = <<'.';
 <!doctype html><html><head>
 <title><!-- TITLE --></title>
@@ -72,12 +64,7 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
         =~ s#<!-- INDEX -->#$index_list_html#r;
 }
 
-sys('git checkout gh-pages');
-
 while( my($name, $html) = each %out ) {
     print "generate $name.html\n";
     io("$name.html") < $html;
-    sys("git add $name.html");
 }
-
-sys("git commit -m 'update htmls'");
