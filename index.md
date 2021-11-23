@@ -1,5 +1,6 @@
 ## CindyLinz 的文章..
 
+  + [2021.11.23 - 養一個孩子很累，那就養兩個！](2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html)
   + [2021.11.6 - 減少看中立客觀的介紹](2021.11.6-avoid-neutral.html)
   + [2020.3.23 - 傷害人民溝通法](2020.3.23-talk-to-people-by-hurt.html)
   + [2020.2.20 - 隱藏手機 (android) Youtube premium 背景播放時的小畫面](2020.2.20-hide-youtube-premium-small-window.html)
