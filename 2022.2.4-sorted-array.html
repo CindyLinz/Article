@@ -99,9 +99,8 @@ fjs.parentNode.insertBefore(js, fjs);
     katex.render cntr.innerText, cntr, throw-on-error: no
 
   document.query-selector-all 'canvas[data-array]' .for-each (canvas) !->
-    canvas.style.width = \100%
-    {width: W} = canvas.get-bounding-client-rect!
-    w = W / 21
+    w = 30
+    W = w * 21
     p = w / 2
     H = w * 1.5 + p * 2
     canvas.width = W
@@ -144,9 +143,8 @@ fjs.parentNode.insertBefore(js, fjs);
   document.query-selector-all 'canvas[data-tree]' .for-each (canvas) !->
     data = canvas.dataset.tree.split \,
 
-    canvas.style.width = \100%
-    {width: W} = canvas.get-bounding-client-rect!
-    w = W / 21
+    w = 30
+    W = w * 21
     r = w / 2 * 0.8
     p = w / 2
     H = w * 2 * (Math.log2(data.length)+2) + p * 2
