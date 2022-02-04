@@ -52,7 +52,7 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
     my $name = $1;
     my($date_cap) = $name =~ /(\d+\.\d+\.\d+)/;
     my $article_md < io("$name.md");
-    my($title, $description) = $article_md =~ /^#\s*(\S.*?)[ \t]*\n\s*(\S.*?)\n\n/ms;
+    my($title, $description) = $article_md =~ /^#\s*(\S.*?)[ \t]*\n\s*(?:\s*>[^\n]*\n\s*)*(\S.*?)\n\n/ms;
     $description =~ s/\n/ /g;
     $description =~ s/\[([^][]*)\]\([^()]*\)/$1/g;
     $out{$name} = $frame_html
