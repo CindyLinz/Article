@@ -94,3 +94,27 @@ p {
     list-style: georgian;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: #000;
+  }
+
+  .frame {
+    background-color: #2b2a33;
+    border-color: #9694a7;
+  }
+
+  blockquote {
+    color: #9694a7;
+  }
+
+  a {
+    color: #78a0d2;
+  }
+
+  h1, h2 {
+    border-bottom-color: #9694a7;
+  }
+}

@@ -97,6 +97,8 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>這一個標記方式可以維持 query 最近值的效率，但是要找出 value 是第幾大就不夠用了，因為我們需要知道 query 到 leave 的路徑上，路徑的左邊總共有幾個洞。如果要讓此一 query 的效能也維持住，修改的方式是讓每一個 internal node 記錄自己 subtree 裡總共有幾個洞 (或是有幾個實體值，這兩個值互補可以換算)。每一個小段更新這個資訊的耗時是 <katex>O(lgN)</katex>，使用時也是 <katex>O(lgN)</katex>，不過空間會多用不少，每一個元素都需要搭配一個可以存得下長度的格子。</p>
 
 <script type=text/ls>
+  is-dark = match-media? "(prefers-color-scheme: dark)" .matches
+
   document.query-selector-all 'katex,.katex' .for-each (cntr) !->
     console.warn \text, cntr.innerText
     console.warn \html, cntr.innerHTML
@@ -112,8 +114,9 @@ fjs.parentNode.insertBefore(js, fjs);
     ctx = canvas.get-context \2d
 
     data = canvas.dataset.array.split \,
-    ctx.line-width = 3
-    ctx.stroke-style = \#666
+    ctx.line-width = 1
+    ctx.stroke-style = if is-dark then \#9694a7 else \#666
+    ctx.fill-style = if is-dark then \#fff else \#000
 
     ctx.font = "bold #{w/2}px sans-serif"
     ctx.text-align = \center
@@ -127,14 +130,11 @@ fjs.parentNode.insertBefore(js, fjs);
     for item in data
       if item == ''
         dx = w / 4
-        #ctx.fill-style = \#999
-        #ctx.fill-rect x, p, w/4, w*1.5
 
         ctx.move-to x+dx, p
         ctx.line-to x+dx, p + w*1.5
       else
         dx = w
-        #ctx.fill-style = \#000
         ctx.fill-text item, x+w/2, p + w*1.5/2
 
         ctx.move-to x, p
@@ -156,8 +156,8 @@ fjs.parentNode.insertBefore(js, fjs);
     canvas.height = H
     ctx = canvas.get-context \2d
 
-    ctx.line-width = 3
-    ctx.stroke-style = \#666
+    ctx.line-width = 1
+    ctx.stroke-style = if is-dark then \#9694a7 else \#666
 
     ctx.font = "bold #{w/2}px sans-serif"
     ctx.text-align = \center
@@ -180,10 +180,10 @@ fjs.parentNode.insertBefore(js, fjs);
       if phase == 1
         ctx.begin-path!
         ctx.arc x, y, r, 0, Math.PI*2
-        ctx.fill-style = \#fff
+        ctx.fill-style = if is-dark then \#2b2a33 else \#fff
         ctx.fill!
         ctx.stroke!
-        ctx.fill-style = \#000
+        ctx.fill-style = if is-dark then \#fff else \#000
         ctx.fill-text data[i], x, y
 
       if end - begin > 1
@@ -196,10 +196,10 @@ fjs.parentNode.insertBefore(js, fjs);
 
     ctx.begin-path!
     ctx.arc p+r, p+r, r, 0, Math.PI*2
-    ctx.fill-style = \#fff
+    ctx.fill-style = if is-dark then \#2b2a33 else \#fff
     ctx.fill!
     ctx.stroke!
-    ctx.fill-style = \#000
+    ctx.fill-style = if is-dark then \#fff else \#000
     ctx.fill-text data.0, p+r, p+r
 
 </script>
