@@ -4,7 +4,7 @@
 <meta name=viewport content=width=device-width,initial-scale=1>
 <meta property=og:type content=article>
 <meta property=og:title content='用一個陣列實作的動態排序容器'>
-<meta property=og:description content='去年出 ICPC 2021 台北站 的 題目 (codeforces)，在驗題時想了一個資料結構。'>
+<meta property=og:description content='這個資料結構是動態排序的容器，是用一個 array 實作的。它的時間複雜度比常見的 balanced binary search tree 要差一點，不過它把所有的資料緊密地排在連續的記憶體，不需要額外的指標，memory locality 比較好。並且如果需要使用 gdb 的時候，直接用眼睛看這一串連續的記憶體就可以知道有沒有問題，不用 trace 指標。'>
 <meta property=og:image content=https://avatars0.githubusercontent.com/u/285660?s=315>
 <meta property=og:image:secure_url content=https://avatars0.githubusercontent.com/u/285660?s=315>
 <link rel=stylesheet type=text/css href=style.css></head><body>
@@ -18,7 +18,9 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2022.2.4</div></div><div class="content"><h1>用一個陣列實作的動態排序容器</h1>
 
-<p>去年出 <a href="https://icpc2021.ntub.edu.tw/">ICPC 2021 台北站</a> 的 <a href="https://drive.google.com/file/d/1YUMxajkblszqjcVhb3ksvv1UL44JOlJT/view">題目</a> (<a href="https://codeforces.com/gym/103443/">codeforces</a>)，在驗題時想了一個資料結構。</p>
+<blockquote>
+  <p>去年出 <a href="https://icpc2021.ntub.edu.tw/">ICPC 2021 台北站</a> 的 <a href="https://drive.google.com/file/d/1YUMxajkblszqjcVhb3ksvv1UL44JOlJT/view">題目</a> (<a href="https://codeforces.com/gym/103443/">codeforces</a>)，在驗題時想了一個資料結構。</p>
+</blockquote>
 
 <p>這個資料結構是動態排序的容器，是用一個 array 實作的。它的時間複雜度比常見的 balanced binary search tree 要差一點，不過它把所有的資料緊密地排在連續的記憶體，不需要額外的指標，memory locality 比較好。並且如果需要使用 gdb 的時候，直接用眼睛看這一串連續的記憶體就可以知道有沒有問題，不用 trace 指標。</p>
 
