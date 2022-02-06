@@ -5,6 +5,7 @@
   + [2022.1.31 - 民主法治也難以處理中國農村抓女人關鎖起來生小孩的問題](2022.1.31-democracy-cant-help-the-women.html)
   + [2022.1.18 - 完整接種疫苗的傳染機會也不低](2022.1.18-full-vaccined-isnt-perfect.html)
   + [2022.1.14 - 低消定在一杯飲料的可能原因](2022.1.14-why-one-drink-minimum.html)
+  + [2021.12.26 - 石尚博物館參觀筆記](2021.12.26-shishang-visit-note.html)
   + [2021.11.23 - 養一個孩子很累，那就養兩個！](2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html)
   + [2021.11.6 - 減少看中立客觀的介紹](2021.11.6-avoid-neutral.html)
   + [2020.3.23 - 傷害人民溝通法](2020.3.23-talk-to-people-by-hurt.html)
