@@ -118,6 +118,7 @@ p {
 
   ul#index-list {
     list-style: georgian;
+    margin-left: 1.5em;
   }
 
   .footer {
