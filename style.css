@@ -41,11 +41,10 @@ img {
 .author img {
   vertical-align: middle;
   border-radius: 50%;
+  float: right;
 }
 .author div {
-  float: right;
   text-align: right;
-  margin-left: 0.5em;
 }
 
 .content {
@@ -99,6 +98,11 @@ p {
 @media only screen and (min-width: 768px) {
   body {
     padding: 2em;
+  }
+
+  .author div {
+    float: right;
+    margin-left: 0.5em;
   }
 
   .frame {
