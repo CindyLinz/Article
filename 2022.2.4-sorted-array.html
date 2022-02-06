@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2022.2.4</div></div><div class="content"><h1>用一個陣列實作的動態排序容器</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2022.2.4</div></div><h1>用一個陣列實作的動態排序容器</h1>
 
 <blockquote>
   <p>去年出 <a href="https://icpc2021.ntub.edu.tw/">ICPC 2021 台北站</a> 的 <a href="https://drive.google.com/file/d/1YUMxajkblszqjcVhb3ksvv1UL44JOlJT/view">題目</a> (<a href="https://codeforces.com/gym/103443/">codeforces</a>)，在驗題時想了一個資料結構。</p>
@@ -213,7 +213,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <script>
   require('livescript').go();
 </script>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2022.2.4-sorted-array.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2022.2.4-sorted-array.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -222,13 +222,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

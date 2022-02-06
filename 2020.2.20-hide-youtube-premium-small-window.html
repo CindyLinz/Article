@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2020.2.20</div></div><div class="content"><h1>隱藏手機 (android) Youtube premium 背景播放時的小畫面</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2020.2.20</div></div><h1>隱藏手機 (android) Youtube premium 背景播放時的小畫面</h1>
 
 <p>Youtube premium 允許使用者開背景播放，也可以關掉手機畫面繼續播放純聲音。只是在背景播放的時候，會在畫面上留有一個小畫面，像圖片右下角這樣子，Youtube 沒有提供關掉它的選項，不過我找到了一個可以關掉它的方法。</p>
 
@@ -39,7 +39,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>這時候你就可以隨意切換到首頁或再開啟你想用的其他 APP，Youtube 正常運作中，也可以看到左上角有長駐提示的 icon，但是那個小畫面就沒有出現了。</p>
 
 <p><img src="2020.2.20-hide-youtube-premium-small-window/5.jpg" alt="" /></p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2020.2.20-hide-youtube-premium-small-window.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2020.2.20-hide-youtube-premium-small-window.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -48,13 +48,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

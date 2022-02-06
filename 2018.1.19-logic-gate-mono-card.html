@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.19</div></div><div class="content"><h1>邏輯閘與群論素材黑白圖卡</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.19</div></div><h1>邏輯閘與群論素材黑白圖卡</h1>
 
 <p>近年的研究顯示, 人類嬰兒三個月大以前只看得到黑白, 會對黑白構成的圖案有興趣... 所以就有許多人印製了黑白圖卡要給嬰兒看 (google image「黑白圖卡」可以看到很多)...</p>
 
@@ -49,7 +49,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>SVG 檔連結: <a href="https://cindylinz.github.io/PublicShare/group.svg">https://cindylinz.github.io/PublicShare/group.svg</a></p>
 
 <p>PDF 檔連結: <a href="https://cindylinz.github.io/PublicShare/group.pdf">https://cindylinz.github.io/PublicShare/group.pdf</a></p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.19-logic-gate-mono-card.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.19-logic-gate-mono-card.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -58,13 +58,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

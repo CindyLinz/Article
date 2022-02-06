@@ -56,9 +56,13 @@ img {
   max-width: 980px;
   border: 0.0625em solid #ddd;
   border-radius: 0.6875em;
-  padding: 2.8125em 0.5em 2.8125em 0.5em;
+  padding: 0.5em 0.5em 1em 0.5em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer {
+  margin-top: .6em;
 }
 
 a {
@@ -92,11 +96,17 @@ p {
   }
 
   .frame {
-    padding: 2.8125em;
+    padding-left: 2.8125em;
+    padding-right: 2.8125em;
   }
 
   ul {
     list-style: georgian;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

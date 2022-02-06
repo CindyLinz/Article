@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2020.3.23</div></div><div class="content"><h1>傷害人民溝通法</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2020.3.23</div></div><h1>傷害人民溝通法</h1>
 
 <p>早上才在網路上看到在傳在罵一個可能的防疫破口，說在美國聚集了大批要回中國的中國人，他們規劃回中國的路上要過境台灣，甚至其中有的說如果染病了要把數字算在台灣頭上，下午就聽到發佈命令台灣禁止轉機了。這反應動作真的是很迅速，迅速到…令人懷疑政府是早就準備好要這樣做，把後續會造成的影響配套都已經先暗中作安排，就等人民抱怨以後才把這命令端出來。</p>
 
@@ -25,7 +25,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>我懷疑走這路線的事件有第一班荒腔走板的武漢撤僑包機、美國911雙子星大樓被撞毀、美國珍珠港被日本轟炸、還有美國這次防疫的動作前半好像相信 WHO 的樣子，都像是政府應該事先就知情 (至少情報單位應該知道) 卻不預先阻止災難發生的。而且事後政府還要努力裝笨否認它事先知情，不然它放任第一波的災難發生還是要擔責任，人民會罵政府放手不阻止而造成無辜的人民傷亡。第一波犧牲的人也的確是無辜的，可以算是自己的政府決定讓他們死的，不過政府是不是應該選擇在事情沒有一般人看得出跡象的時候，就先出手阻止，這就是電車難題了。對我們事外觀察的人來看，還有一個麻煩是歷史沒有如果，政府當時選擇了一條路，我們永遠不會知道另一條路會怎麼發展，不過總之看起來歷史上有不少次政府是先放手讓災難發生一點，然後再用不太合理的快速作反應。</p>
 
 <p>我覺得這放慢半拍而造成的犧牲，有一點像是台灣過度醫療的意味，就「解決問題」本身來說它完全就是個浪費、是白白的損失，而且有時候損失的是人命，但是不付出這個損失的話，可能會有更多問題本身以外的問題，可能有更大的損失、或是給自身帶來麻煩。它們本質上我覺得可以算是溝通的手段，是一種比較貴的溝通方式，卻不是每次都可以找到好辦法節省的東西。</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2020.3.23-talk-to-people-by-hurt.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2020.3.23-talk-to-people-by-hurt.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,13 +34,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

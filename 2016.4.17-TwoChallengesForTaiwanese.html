@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2016.4.17</div></div><div class="content"><h1>台灣人的兩個考驗</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2016.4.17</div></div><h1>台灣人的兩個考驗</h1>
 
 <p>最近，在台灣人的面前，有兩個考驗，考驗著我們將選擇未來要生活在怎樣的社會，人治的社會、或法治的社會。作出的選擇不會立即生效，但是會漸漸把我們的社會往那邊帶。</p>
 
@@ -65,7 +65,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>犯罪集團很可惡，受害的人很可憐，能有效懲罰犯罪者（如果假設他們最後會被確認真的是犯罪者）是一件大快人心的事。我們真的會希望台灣的司法可以怎樣硬起來或行事更加靈活，但是我們要小心想想我們該怎麼達到，千萬不能輕率地開放過大的空間，讓這社會往人治的方向移動，讓執法變成戒嚴時期的那條紅線，僅管可以變得很有效率，但它不會每一次都為了正義，它會有時候為了一些人的私利而劃在好人的頭上。</p>
 
 <p>這意向的選擇不會造成立即的影響，但它會漸漸影響我們的社會往那個方向偏過去。台灣的政治人物靠的要嘛是財力要嘛是民意，民意往哪邊偏，就會吸引越多的政治人物往那邊偏，它會形塑我們未來國家社會的樣貌。我們作出選擇，不要在我們憤怒或者悲傷的時候，因為激動狀態會讓我們集中注意於處理眼前的狀況，會讓我們暫時變得短視，過於放大解讀眼前看得到的部分，此時作出的選擇容易為了眼前而犧牲掉太多的未來。待心情平靜以後，再好好想一想，我們希望建構怎樣的社會。</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2016.4.17-TwoChallengesForTaiwanese.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2016.4.17-TwoChallengesForTaiwanese.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -74,13 +74,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

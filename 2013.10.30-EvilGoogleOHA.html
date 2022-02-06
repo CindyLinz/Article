@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2013.10.30</div></div><div class="content"><h1>邪惡 Google 的 OHA (Open Handset Alliance)</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2013.10.30</div></div><h1>邪惡 Google 的 OHA (Open Handset Alliance)</h1>
 
 <p>從這篇文章, <a href="http://techorange.com/2013/10/24/googles-iron-grip-on-android/">開源 Android 名存實亡：看 Google 巧妙地奪回 Android 所有權</a> 裡讀的, 覺得 Google 的 Open Handset Alliance（OHA) 是個邪惡非常的東西「一個與 Android——Google 的 Android 達成協議的公司聯盟，按照協定，未經 Google 允許，各公司皆不得生產相關 Android 設備。」</p>
 
@@ -33,7 +33,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>OHA 就像石頭湯故事裡的石頭, 滾進越來越多廠商, 讓原本還不會哭的外界廠商也開始流淚簽進去... 初期只有貪圖 Google 閉源服務的廠商需要加入, 後來是如果你不加入, 就找不到有力的沒加入的廠商可以合作.... wwww</p>
 
 <p>現在 OHA 之外的廠商應該就是阿里巴巴這種大陸的公司, 還有 Amazon 了, 聽說三星也很努力一直有準備 plan B, 可是實力(領域比較遠)不太行 XD</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2013.10.30-EvilGoogleOHA.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2013.10.30-EvilGoogleOHA.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -42,13 +42,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2016.1.7</div></div><div class="content"><p>如果你是中國人，或將來可能會 (自願或非自願) 成為中國人，或對中國事務有興趣的人，這篇可以參考一下～ 如果發現我文中有什麼資料錯誤或論點邏輯有問題，或是想幫我修正的話，歡迎用 github issue 或 pull request 跟我討論喔～</p>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2016.1.7</div></div><p>如果你是中國人，或將來可能會 (自願或非自願) 成為中國人，或對中國事務有興趣的人，這篇可以參考一下～ 如果發現我文中有什麼資料錯誤或論點邏輯有問題，或是想幫我修正的話，歡迎用 github issue 或 pull request 跟我討論喔～</p>
 
 <h1>身為一個中國人，可以如何反對不認同的政策</h1>
 
@@ -158,7 +158,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>理論上，這一個國家不會出現錯誤的政策，過去沒有、以後也不會有，如果出現了你反對的政策，請你深刻地反省、好好地檢討自己。</p>
 
 <p>如果你不相信這套理論、你的價值觀與這個國家不合，那麼你該想辦法不要加入它，或是如果你已經是其中之一，那就該想辦法脫離它。而至於說這個國家會不會有一天改變它的基本精神.. 我與我朋友各有不同看法，共同點是如果會在短期 (幾十年內) 改變，那這改變的過程應該不會是和平的，也就是現在這一代人有生之年應該不會看到和平的轉換。嗯，這部分也是改天再整理想法吧～把想法列出來以後大家就可以再討論這思路的哪邊推論合理哪邊有瑕疵了～</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2016.1.7-HowToRejectPolicyAsAChinese.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2016.1.7-HowToRejectPolicyAsAChinese.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,13 +167,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

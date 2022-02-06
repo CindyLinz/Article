@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2017.12.5</div></div><div class="content"><h1>壞老闆逍遙法「內」之道</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2017.12.5</div></div><h1>壞老闆逍遙法「內」之道</h1>
 
 <p>一例一修、七天假、加班費的認定、基本工資、連續工作天數與時數的限制等等，是身邊好朋友們討論好一陣子的議題。我覺得憂心，我覺得持保護勞工立場的一方，想要推行的方案真是糟糕透了。啊！我不是要說資方善良所以不要給他們找麻煩，我是要說資方有夠壞，所以這些方案即便順利地推行下去，一個壞老闆還是能在其中合法地悠遊自在。我希望大家省下一些耗在這部分的腦力，多分一些來設想其他比較有用的方法 (不過對於有夠粗糙的修法流程，該罵的還是要繼續罵)</p>
 
@@ -172,7 +172,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>自由市場是一頭兇猛的野獸，牠對社會沒有善意、也沒有惡意，但是牠有很強的能力。我們不該放任牠自己隨意亂衝，但最好也不要直接與牠對著幹。畢竟我們今日社會的運作靠牠帶來了許多好處，隨便侷限牠的能力會給我們帶來立即而明顯的退步，而且我們需要與台灣之外的國家競爭，即便我們能停下我們自己的野獸，我們也阻止不了外國的野獸向我們衝擊。</p>
 
 <p>無論你喜不喜歡自由市場，都請花一些時間來了解它運作的原理，然後我們要想方法巧妙地利用它。改善資訊流通是我想到的一個方法，但它應該不是唯一的方法，我只是因為自己剛好從事資訊業，所以習慣先從這個方面找解法。希望大家能把虛耗的時間省下來，各從自己的專長裡，我們找找能讓社會更好的方法。</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2017.12.5-legal-bad-boss.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2017.12.5-legal-bad-boss.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -181,13 +181,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

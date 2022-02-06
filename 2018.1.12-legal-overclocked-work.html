@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.12</div></div><div class="content"><h1>鑫蒂大帝系列 - 合法的超時工作</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.12</div></div><h1>鑫蒂大帝系列 - 合法的超時工作</h1>
 
 <p>以後鑫蒂大帝要開兩家軟體公司: 鑫蒂無良企業社, 鑫蒂黑心企業社. 員工薪水都是日薪計算, 同時在兩家兼職.. 其中一半的人每週一二三四在無良企業社寫程式, 五六日在黑心企業社寫程式; 另外一半的人倒過來輪.. 員工做好做滿一年365天每天八小時, 還可以同時享受兩間公司所提供的七休三或七休四, 優於勞基法的公司福利, 再加送員工四年一次的229作為公司的聯合休假日. 生意太好工作吃緊的時候鑫蒂大帝會再去開一間鑫蒂血汗企業社, 邀請前兩家公司的員工被自願來兼職, 薪資以時薪計算, 每一天已經工作滿八小時的人, 剩下的時間去第三間繼續寫程式... 在別的公司因為各種因素而無法拒絕加班的人, 來到鑫蒂大帝的公司也一定不會拒絕兼職的邀請.</p>
 
@@ -27,7 +27,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>法規規定越嚴苛, 鑫蒂大帝就會越強大, 因為所有不照鑫蒂大帝的方法經營的, 通通都會撐不下去. 到了規定禁止兼職的時候, 鑫蒂大帝最期待的就是勞基法進一步規定勞工通通不准換工作, 或是離職後一年內設為閉鎖期不准找新工作, 這樣她就可以把所有的員工栓在她的麾下, 作她一輩子的奴隸, 從此過著幸福快樂的日子~</p>
 
 <p>(我覺得額外取一個奇怪的藝名, 就能寫出自己平常不願意說的怪話了...)</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.12-legal-overclocked-work.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.12-legal-overclocked-work.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -36,13 +36,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

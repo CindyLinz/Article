@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.11.23</div></div><div class="content"><h1>投票的宗教意義的心理機制</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.11.23</div></div><h1>投票的宗教意義的心理機制</h1>
 
 <p>前面一篇 <a href="//cindylinz.github.io/Article/2018.11.21-the-religional-meaning-of-voting.html">投票的宗教意義</a> 講到投票帶來的心理影響。無論人因為什麼動機而去投票，只要他一次又一次去投票，那麼投票這個動作帶來的心理暗示，強化個人的認同感歸屬感，應該通常都是會有的。這個效果應該源自於人類天生的心理保護機制。一般來說，花了一堆代價，做一件客觀上效益其實很低的事情，並且還一次又一次重複地做，就會有這個現象。就像受騙的人或是東西買貴的人，會傾向去生出各種理由幫騙子講好話，或是主動去認定買來的東西真的很好。</p>
 
@@ -25,7 +25,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>我們可以採正面的態度來看待這個心理機制。在還沒陷入的情境，可以有意識地利用這種現象在自己身上，主動將它運用在好的地方。我們可以事先看好在某個場合的這個機制會帶來什麼後續效果 (例如去投票會增進歸屬感)，覺得好的話，我們理性地決定投身到這個機制裡面，主動去觸發它 (例如就去投票)，有意識地制約自己前往自己覺得好的境界去。雖然在這流程的後半，我們的大腦是被心理機制制約的，但它是我們事先想好並選擇的，所以整個來說這是我們有意識的決定，而不是像阿米巴那樣無意識地被操控。利用心理的順向制約的好處是後半的路程身心協調，做同樣的事卻比較不會覺得累。可以想像有些人在玩一些需要花時間練功的遊戲，客觀來說明明就是枯燥疲累的長時間重複性動作。但玩家在過程中卻是快樂的，有休閒的效果，反而能讓他真正要工作的時候更有活力。現實中進入這種心理狀態，就會像遊戲中正向 buff 的效果 (如果你沒在打電動而聽不懂這比喻的話就跳過這句吧 orz)</p>
 
 <p>而如果萬一是被動陷入這個處境，例如說已經被騙了或是東西買貴了，這處理起來就比較需要技巧了，要讓自己繼續享受保護機制帶來的幸福感以免自我否定而崩潰，但同時又不影響後續的判斷決定……嗯，這個複雜的操作改天再說好了～</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.11.23-the-psychology-effect-of-the-religional-meaning-of-voting.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.11.23-the-psychology-effect-of-the-religional-meaning-of-voting.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,13 +34,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

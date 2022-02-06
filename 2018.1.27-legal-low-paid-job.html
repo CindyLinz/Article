@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.27</div></div><div class="content"><h1>鑫蒂大帝系列 - 低於基本工資的合法工作</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.1.27</div></div><h1>鑫蒂大帝系列 - 低於基本工資的合法工作</h1>
 
 <p>這次要挑戰低於基本工資的合法工作. 鑫蒂大帝要開一家專門作教育訓練與認證的公司: 鑫蒂功德會實證社, 目標是為社會提供刻苦耐勞的優質勞動力. 經過一定程度的教育之後, 公司會根據修習的課程不同, 授予不同等級的一年效期刻苦耐勞良工證. 有些類型的工作職缺, 會將這良工證列入必要的聘用條件.</p>
 
@@ -31,7 +31,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>所以, 最低基本工資到底限制了什麼? 就是讓弱勢勞工不能再直接簡單找薪水兩萬的工作, 而要每年多繳兩千元給鑫蒂大帝才能再找薪水兩萬的工作. 而且, 你千萬不要阻止鑫蒂大帝. 如果弱勢勞工現在是在第十八層地獄, 你的每一刀都會劃在勞工身上, 讓弱勢勞工掉入第十九層.... 啊不對! 你應該想盡辦法阻止鑫蒂大帝, 讓鑫蒂大帝去運用更加隱晦, 別人都想不出來的方法. 拜託大家用公權力消滅鑫蒂大帝的競爭者, 鑫蒂大帝就可以向弱勢勞工收取更多更多的費用了! 弱勢勞工也是鑫蒂大帝心中最軟的一塊! (嚼</p>
 
 <p>(編按: 這個方法還是有一些成本在, 雖然已經蠻低的了.. 但相對來說, 如果賺錢不靠形象的公司願意不管吃相難看的話, 規避的成本可以省更多更多就達到一樣的效果, 所以這種作法大概不容易普及, 只能拿來獵奇笑笑, 並作為一個理論上的成本上限... :Q)</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.27-legal-low-paid-job.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.1.27-legal-low-paid-job.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,13 +40,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

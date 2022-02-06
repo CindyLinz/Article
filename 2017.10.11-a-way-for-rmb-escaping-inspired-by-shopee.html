@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2017.10.11</div></div><div class="content"><h1>蝦皮啟示的出逃人民幣的方法</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2017.10.11</div></div><h1>蝦皮啟示的出逃人民幣的方法</h1>
 
 <p>如果你是有中國籍的中國人，你在中國很有錢，有滿手的人民幣，而且在中國你已經沒有那麼多東西想消費了，你想把錢大筆大筆地拿到美國去花～ 中國政府怕人民幣貶值，對人民幣外流的管制很嚴格，想要把大把的人民幣弄出國，理由大剌剌地說是想拿去外國花用是不行的，你需要一些…… 手法，例如說花一堆機票與臨時工工資請一堆人幫你帶出國，每次每人可以攜帶 20,000 人民幣……</p>
 
@@ -29,7 +29,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>到這裡為止，你用了比較快的速率把人民幣花掉，然後獲得一個很有名氣，使用量很大，但是純燒錢而不賺錢的公司。這些使用量是用燒錢撐出來的，你不知道如果在花費上縮手以後還會不會繼續有這麼大的使用量。若要等這個公司賺錢回本可能會等很久不一定，但它的使用量與名氣都衝起來以後，你就可以在美國募資或上市，在比較短的時間內出脫手中的持股換成美金……  Tada!!</p>
 
 <p>欸我不是說騰訊的蝦皮就是在做這件事喔，我不認識騰訊蝦皮的老闆，我不知道他們盤算的是什麼～我只是看了蝦皮的經營動作以後有了一點靈感，構想了一個方法，提供給也許有這個需求的朋友參考使用~ 如果有朋友運用了這個方法成功幫自己解套，將來想回報我的話，可以請我吃一頓鬍鬚張~~ :D</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2017.10.11-a-way-for-rmb-escaping-inspired-by-shopee.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2017.10.11-a-way-for-rmb-escaping-inspired-by-shopee.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -38,13 +38,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

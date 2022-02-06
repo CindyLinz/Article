@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2021.11.23</div></div><div class="content"><h1>養一個孩子很累，那就養兩個！</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2021.11.23</div></div><h1>養一個孩子很累，那就養兩個！</h1>
 
 <p>養一個小孩，如果覺得心累的話…… 可以考慮再養一個(!?)</p>
 
@@ -27,7 +27,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>有了老二，發現其實不是自己毫無進步，只是老大成長太快了。我剛要開始熟練知道該如何應對，他就進入下一個階段拋出新的問題，我永遠都在越級打怪。老二雖然是變異株，但只要是人類就有相當的共通性，所以永遠都是低我一級的哥布林 (如果有老三也許永遠都是史萊姆)。我終於發現自己其實沒有那麼爛。</p>
 
 <p>另外，也剛好家裡兩個寶寶的個性非常相反，點技能的順序也很不一樣，讓我知道以前老大有一些特別厲害的表現都不是我會帶，有一些特別的弱項也不是被我搞壞，老大喜歡吃檸檬絕對不是因為在他很小的時候騙他吃各種嫌惡食物。所以自責與自傲的處境也會減少很多。</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -36,13 +36,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

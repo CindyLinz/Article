@@ -16,7 +16,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.7.5</div></div><div class="content"><h1>不用防水材料的防漏水天花板裝潢設計</h1>
+<article class=frame><div class=content><div class=author><img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>2018.7.5</div></div><h1>不用防水材料的防漏水天花板裝潢設計</h1>
 
 <p>裝潢房子，常常會在原本的天花板之下再做一層裝潢的天花板，用來隱藏消防管線、隱藏冷氣機或冷水管、或是隱藏位置不妙的大樑、還有方便裝設一堆漂亮的崁燈等等。這一片裝潢加裝的天花板通常是水平的。我有個想法，把它作成傾斜的，會帶來一些好處：</p>
 
@@ -31,7 +31,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p>住在頂樓的人最適合考慮這個作法，就算你的房子還很新不會漏水，但一旦住久了，它就是可能會漏水的老房子啦～～ 不是住頂樓，但是很接近頂樓的人，最好也考慮一下，因為你家樓上可能有內縮的設計，那麼你的屋頂有一部分就會是裸露的，也是很有機會漏水的。最後，如果你不是上面兩種情況，但是你家樓上有人住的話，你最好還是要考慮一下，因為不知道樓上什麼時候會發神經或是遷來一戶神經病，也許大樓起造的時候就是神經病等級的設計，把你睡覺處的正上方(改)建成廁所，而且可能地板防水沒有施工好或老舊了，有一天馬桶堵住了，泡著屎尿的糞水浸潤你的天花板，然後滴落在你睡覺的床上，或是滴進你正在睡覺而沒有緊閉的嘴裡。雖然經過水泥天花板的過濾，你不會看到固體糞便，每一滴水看起來都是透明的，而且聞聞好像也沒什麼味道。但是用水桶收集起來以後你就會發現它是黃褐色的，而且很臭…… 發生這樣的事情理論上樓上要負責，但無論他怎麼有誠意地整修或怎麼賠錢給你，也不會減少你心中的一點陰影。這時候你就會希望你的頭上有一片傾斜的天花板，雖然發生漏水之後還是要善後，但是你的心中就不會像我一樣有陰影。</p>
 
 <p>我問了身邊的朋友，包括常常買自住宅的同事、常常看別人房子的房貸襄理、還有常常作裝潢的設計師，都沒看過或聽說有人天花板這樣子設計。所以這設計的實際效果怎麼樣，大家的經驗就是沒有經驗w 希望最近或是接下來要裝潢房屋的朋友，可以考慮考慮這個作法，這樣在接下來的十年裡，我們漸漸就會知道這樣作的效果好不好了～～</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.7.5-roof-design-for-leaking-water.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div class=footer><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2018.7.5-roof-design-for-leaking-water.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,13 +40,15 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>

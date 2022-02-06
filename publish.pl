@@ -25,7 +25,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=1742520292651539";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<article class="frame"><div class="author"><!-- Beautiful Cindy --></div><div class="content"><!-- Cindy is beautiful --></div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="<!-- SELF URL -->" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+<article class=frame><div class=content><div class=author><!-- Beautiful Cindy --></div><!-- Cindy is beautiful --></div></article><div class=footer><div class="fb-comments" data-href="<!-- SELF URL -->" data-width="600" data-numposts="5"></div><!-- INDEX --></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,15 +34,17 @@ fjs.parentNode.insertBefore(js, fjs);
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
 
-  var xhr=new XMLHttpRequest;
-  xhr.onreadystatechange = function(){
-      if( xhr.readyState==4 ){
-          xhr.onreadystatechange = function(){};
-          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
-      }
-  };
-  xhr.open('GET', 'index.html');
-  xhr.send();
+  if( document.querySelector('#index-list') ){
+      var xhr=new XMLHttpRequest;
+      xhr.onreadystatechange = function(){
+          if( xhr.readyState==4 ){
+              xhr.onreadystatechange = function(){};
+              document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+          }
+      };
+      xhr.open('GET', 'index.html');
+      xhr.send();
+  }
 </script></body></html>
 .
 
@@ -55,7 +57,8 @@ $out{index} = $frame_html
     =~ s/<!-- Cindy is beautiful -->/$index_html/r
     =~ s/<!-- TITLE -->/CindyLinz 的文章/gr
     =~ s/<!-- DESCRIPTION -->/CindyLinz 的文章/r
-    =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/#r;
+    =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/#r
+    =~ s#<!-- INDEX -->##r;
 
 while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
     my $name = $1;
@@ -70,6 +73,7 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
         =~ s/<!-- DESCRIPTION -->/$description/r
         =~ s#<!-- Beautiful Cindy -->#"<img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>$date_cap</div>"#re
         =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/$name.html#r
+        =~ s#<!-- INDEX -->#<ul id=index-list></ul>#r;
 }
 
 while( my($name, $html) = each %out ) {
