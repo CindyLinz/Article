@@ -1,5 +1,6 @@
 ## CindyLinz 的文章..
 
+  + [2022.2.6 - 一個切棗子的方法](2022.2.6-a-way-to-cut-indian-jujube.html)
   + [2022.2.4 - 用一個陣列實作的動態排序容器](2022.2.4-sorted-array.html)
   + [2021.11.23 - 養一個孩子很累，那就養兩個！](2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html)
   + [2021.11.6 - 減少看中立客觀的介紹](2021.11.6-avoid-neutral.html)
