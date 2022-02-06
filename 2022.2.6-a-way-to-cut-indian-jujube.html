@@ -29,26 +29,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <p><img src="2022.2.6-a-way-to-cut-indian-jujube.png" alt="過程圖" /></p>
 
 <p>然後寶寶就會拿切好的棗子，研究誰跟誰原本是連在一起的，玩立體拼圖組裝回去</p>
-</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2022.2.6-a-way-to-cut-indian-jujube.html" data-width="600" data-numposts="5"></div><ul>
-<li><a href="2022.2.6-a-way-to-cut-indian-jujube.html">2022.2.6 - 一個切棗子的方法</a></li>
-<li><a href="2022.2.4-sorted-array.html">2022.2.4 - 用一個陣列實作的動態排序容器</a></li>
-<li><a href="2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html">2021.11.23 - 養一個孩子很累，那就養兩個！</a></li>
-<li><a href="2021.11.6-avoid-neutral.html">2021.11.6 - 減少看中立客觀的介紹</a></li>
-<li><a href="2020.3.23-talk-to-people-by-hurt.html">2020.3.23 - 傷害人民溝通法</a></li>
-<li><a href="2020.2.20-hide-youtube-premium-small-window.html">2020.2.20 - 隱藏手機 (android) Youtube premium 背景播放時的小畫面</a></li>
-<li><a href="2018.11.23-the-psychology-effect-of-the-religional-meaning-of-voting.html">2018.11.21 - 投票的宗教意義的心理機制</a></li>
-<li><a href="2018.11.21-the-religional-meaning-of-voting.html">2018.11.21 - 投票的宗教意義</a></li>
-<li><a href="2018.7.5-roof-design-for-leaking-water.html">2018.7.5 - 不用防水材料的防漏水天花板裝潢設計</a></li>
-<li><a href="2018.1.27-legal-low-paid-job.html">2018.1.27 - 鑫蒂大帝系列 - 低於基本工資的合法工作</a></li>
-<li><a href="2018.1.19-logic-gate-mono-card.html">2018.1.19 - 邏輯閘與群論素材黑白圖卡</a></li>
-<li><a href="2018.1.12-legal-overclocked-work.html">2018.1.12 - 鑫蒂大帝系列 - 合法的超時工作</a></li>
-<li><a href="2017.12.5-legal-bad-boss.html">2017.12.5 - 壞老闆逍遙法「內」之道</a></li>
-<li><a href="2017.10.11-a-way-for-rmb-escaping-inspired-by-shopee.html">2017.10.11 - 蝦皮啟示的出逃人民幣的方法</a></li>
-<li><a href="2016.4.17-TwoChallengesForTaiwanese.html">2016.4.17 - 台灣人的兩個考驗</a></li>
-<li><a href="2016.1.7-HowToRejectPolicyAsAChinese.html">2016.1.7 - 身為一個中國人，可以如何反對不認同的政策</a></li>
-<li><a href="2014.4.6-MajorityOfConcillorsAndMajorityOfPublicOpinion.html">2014.4.6 - 過半數的民代 = 過半數的民意? -- 膨脹的權力槓桿</a></li>
-<li><a href="2013.10.30-EvilGoogleOHA.html">2013.10.30 - 邪惡 Google 的 OHA (Open Handset Alliance)</a></li>
-</ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
+</div></article><div style="margin-top:.6em;display:flex;justify-content:center"><div class="fb-comments" data-href="https://cindylinz.github.io/Article/2022.2.6-a-way-to-cut-indian-jujube.html" data-width="600" data-numposts="5"></div><ul id=index-list></ul></div><center style="margin-top:1em"><a href=".">home</a></center><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -56,4 +37,14 @@ fjs.parentNode.insertBefore(js, fjs);
 
   ga('create', 'UA-76540858-1', 'auto');
   ga('send', 'pageview');
+
+  var xhr=new XMLHttpRequest;
+  xhr.onreadystatechange = function(){
+      if( xhr.readyState==4 ){
+          xhr.onreadystatechange = function(){};
+          document.querySelector('#index-list').innerHTML = xhr.responseText.replace(/.*?<ul>(.*?)<\/ul>.*/s, '$1');
+      }
+  };
+  xhr.open('GET', 'index.html');
+  xhr.send();
 </script></body></html>
