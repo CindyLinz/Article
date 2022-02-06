@@ -58,6 +58,9 @@ img {
 
 .footer {
   margin-top: .6em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
 }
 
 a {
