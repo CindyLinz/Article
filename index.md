@@ -3,6 +3,7 @@
   + [2022.2.6 - 一個切棗子的方法](2022.2.6-a-way-to-cut-indian-jujube.html)
   + [2022.2.4 - 用一個陣列實作的動態排序容器](2022.2.4-sorted-array.html)
   + [2022.1.31 - 民主法治也難以處理中國農村抓女人關鎖起來生小孩的問題](2022.1.31-democracy-cant-help-the-women.html)
+  + [2022.1.18 - 完整接種疫苗的傳染機會也不低](2022.1.18-full-vaccined-isnt-perfect.html)
   + [2021.11.23 - 養一個孩子很累，那就養兩個！](2021.11.23-tired-of-taking-care-of-one-children-then-take-two.html)
   + [2021.11.6 - 減少看中立客觀的介紹](2021.11.6-avoid-neutral.html)
   + [2020.3.23 - 傷害人民溝通法](2020.3.23-talk-to-people-by-hurt.html)
