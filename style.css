@@ -28,6 +28,10 @@ blockquote {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .author {
   float: right;
   font-style: italic;
@@ -64,6 +68,8 @@ a {
 
 ul {
   padding: 0em;
+  padding-left: 1.5em;
+  margin: 0em;
   list-style: none;
 }
 
@@ -90,7 +96,6 @@ p {
   }
 
   ul {
-    padding: 2em;
     list-style: georgian;
   }
 }
