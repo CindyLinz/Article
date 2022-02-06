@@ -71,7 +71,7 @@ while( $index_md =~ /\[[^][]*\]\(([^()]*)\.html\)/g ) {
         =~ s/<!-- Cindy is beautiful -->/markdown($article_md)/re
         =~ s/<!-- TITLE -->/$title/gr
         =~ s/<!-- DESCRIPTION -->/$description/r
-        =~ s#<!-- Beautiful Cindy -->#"<img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>$date_cap</div>"#re
+        =~ s#<!-- Beautiful Cindy -->#<img width=50 height=50 src=https://avatars0.githubusercontent.com/u/285660?s=50><div>CindyLinz<br>$date_cap</div>#r
         =~ s#<!-- SELF URL -->#https://cindylinz.github.io/Article/$name.html#r
         =~ s#<!-- INDEX -->#<ul id=index-list></ul>#r;
 }

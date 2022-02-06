@@ -33,18 +33,14 @@ img {
 }
 
 .author {
-  float: right;
   font-style: italic;
-  position: relative;
-  top: -1em;
+  margin-bottom: -1.5em;
 }
 .author img {
   vertical-align: middle;
   border-radius: 50%;
-  float: right;
-}
-.author div {
-  text-align: right;
+  float: left;
+  margin-right: 0.5em;
 }
 
 .content {
@@ -100,9 +96,16 @@ p {
     padding: 2em;
   }
 
+  .author {
+    float: right;
+    font-style: italic;
+    position: relative;
+    top: -1em;
+    margin-bottom: 0em;
+  }
   .author div {
     float: right;
-    margin-left: 0.5em;
+    text-align: right;
   }
 
   .frame {
